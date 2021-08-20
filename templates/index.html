@@ -1,0 +1,111 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<link rel="stylesheet" href="static/css/main.css">
+
+{% endblock %}
+
+{% block body %}
+
+<div>
+
+    <h1 style="padding-left: 224px;" class="v1">
+        
+        Venis Prajapati's Autograding Software
+
+        <a style="float: right;" class="info-links" href="/info">Info about Software</a>
+
+    </h1>
+
+
+    <div id="frame">
+
+        <a style="float: right;" class="back-link" href="/result">Download Previous Results</a>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+
+            <div id="frame">
+
+                <h3 class="head-1">Exam details</h3>
+                <p></p>
+
+                <label class="form-label" for="examName">Examination Name: </label>
+                <input class="form-text" autofocus autocomplete="off" maxlength="25" type="text" name="examName" id="i1"
+                    placeholder="Examination name" required>
+                &emsp; &emsp; &emsp; &emsp;
+                <label class="form-label" for="examDate">Exam Date: </label>
+                <input class="form-text" type="date" name="examDate" id="i9" placeholder="Examination Date" required>
+
+                <p></p>
+            </div>
+            <div id="frame">
+                <p></p>
+
+
+                <h3 class="head-1">Files</h3>
+                <label class="form-label" for="students">Students: </label>
+                <input type="file" id="f1" name="students" accept=".xlsx" required>
+                &ensp;
+                <label class="form-label" for="answers">Answers: </label>
+                <input type="file" id="f2" name="answers" accept=".xlsx" required>
+                &ensp;
+                <label class="form-label" for="omr-sheets">OMR Sheet: </label>
+                <input type="file" id="f3" name="omr-sheets" accept=".png, .jpg, .jpeg" multiple required>
+
+
+                <p></p>
+            </div>
+            <div id="frame">
+                <p></p>
+
+                <h3 class="head-1">MCQs</h3>
+                <label class="form-label" for="total-mcq">Total MCQs: </label>
+                <input type="number" name="total-mcq" id="i2" placeholder="Total Mcqs: 180" required>
+                &emsp; &ensp; &emsp;
+                <label class="form-label" for="positive-marks">Positive marks: </label>
+                <input type="number" name="positive-marks" id="i3" placeholder="Positive Marks: 4" required>
+                &emsp; &ensp; &ensp; &emsp;
+                <label class="form-label" for="negative-marks">Negative marks: </label>
+                <input type="number" name="negative-marks" id="i4" placeholder="Negative Marks: -1" required>
+
+            </div>
+            <div id="frame">
+
+                <h3 class="head-1">Section</h3>
+                <label class="form-label" for="section">Check this box if there are Sections in examination: </label>
+                <input type="checkbox" name="section" id="i5">
+
+                <p></p>
+
+                <label class="form-label" for="section-1">Section 1: &ensp;</label>
+                <input type="number" name="section-1" id="i6" placeholder="Section-1 till: 45">
+
+                <p></p>
+
+                <label class="form-label" for="section-2">Section 2: &ensp;</label>
+                <input type="number" name="section-2" id="i7" placeholder="Section-2 till: 90">
+
+                <p></p>
+
+                <label class="form-label" for="section-3">Section 3: &ensp;</label>
+                <input type="number" name="section-3" id="i8" placeholder="Section-3 till: 180">
+
+                <p></p>
+                <p></p>
+
+            </div>
+            <div id="frame">
+
+                <div class="submit">
+                    <input type="submit" value="Make Results">
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+{% endblock %}

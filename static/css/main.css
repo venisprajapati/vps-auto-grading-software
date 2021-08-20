@@ -1,0 +1,105 @@
+.v1 {
+    background-color: rgb(32, 32, 32);
+    color: whitesmoke;
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: normal;
+    text-align: center;
+    margin-top: 12px;
+    padding: 12px;
+}
+
+#frame {
+    border: 4px solid rgb(32, 30, 30);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 8px;
+    padding: 16px;
+}
+
+.head-1 {
+    font-size: 24px;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form-text {
+    font-size: 18px;
+    width: 400px;
+}
+
+.back-link {
+    border: 2px solid rgb(32, 30, 30);
+    border-radius: 25px;
+    margin: 20px;
+    padding: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.info-links {
+    border: 2px solid white;
+    color:black;
+    font-size: medium;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    margin: auto;
+    margin-top: 4px;
+    padding: 4px;
+    float: left;
+    text-decoration: none;
+}
+
+.section-1 {
+    text-align: center;
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    height: 100px;
+}
+
+.submit {
+    margin-left: 42%;
+}
+
+.main-0 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.main-1 {
+    font-size: 20px;
+}
+
+footer {
+    justify-content: center;
+    background-color: rgb(32, 32, 30);
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    padding: 2px;
+}
+
+a {
+    color: black;
+}
+
+input[type=submit] {
+    background-color: white;
+    border: 3px solid rgb(32, 30, 30);
+    color: rgb(0, 0, 0);
+    border-radius: 4px;
+    font-size: 24px;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(32, 30, 30);
+    color: white;
+}

@@ -156,7 +156,7 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
             "________________________________________________________________________________________________________________________________")
 
     # heading 3
-    document.add_heading("OMRs for Individual Students", 2)
+    document.add_heading("Checked OMRs Of Individual Students", 2)
 
     document.add_paragraph(
         "________________________________________________________________________________________________________________________________")
