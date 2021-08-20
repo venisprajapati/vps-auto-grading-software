@@ -114,7 +114,9 @@ def open_web_browser():
 # main function :- program execution will starts from here
 if __name__ == '__main__':
 
-    # Timer(1, open_web_browser).start()
-    # serve(app, host="127.0.0.1", port=2102)
+    print("Venis Prajapati's Auto grading Software Started At PORT: http://127.0.0.1:2102/")
 
-    app.run(port=2102, debug=True)
+    Timer(1, open_web_browser).start()
+    serve(app, host="127.0.0.1", port=2102)
+
+    # app.run(port=2102, debug=True)
