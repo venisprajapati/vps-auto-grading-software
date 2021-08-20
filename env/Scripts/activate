@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="D:\Projects\Bliss Academy\code\project\env"
+VIRTUAL_ENV="D:\Projects\vps-auto-grading-software\vps-auto-grading-software\env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
