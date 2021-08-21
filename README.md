@@ -27,11 +27,29 @@
 
 ## Installation
 
-- Download or Fork Project from <a href="https://github.com/venisprajapati/vps-auto-grading-software">GitHub</a>
+### Windows
+
+- Download or Clone Project from <a href="https://github.com/venisprajapati/vps-auto-grading-software">GitHub</a>
 - Unzip :/ the Project
 - Install python <a href="https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe">Python 3.9.6</a>
 - Run <b>install.bat</b> to install all dependencies in the project
 - Run <b>vps-ags.bat</b> to start the software
+- Server runs with output like: <b>Venis Prajapati's Auto grading Software Started At PORT: <a href="http://127.0.0.1:2102/">http://127.0.0.1:2102/</a> </b>
+
+### Linux and Mac
+
+- Download or Clone Project from <a href="https://github.com/venisprajapati/vps-auto-grading-software">GitHub</a>
+- Unzip :/ the Project
+- Install Python 3.9.6
+- Create virtual environment and activate venv
+- Run following command to install required packages & libraries
+    ```
+    pip3 install -r requirements.txt
+    ```
+- To run project run this command
+    ```
+    python3 app.py
+    ```
 - Server runs with output like: <b>Venis Prajapati's Auto grading Software Started At PORT: <a href="http://127.0.0.1:2102/">http://127.0.0.1:2102/</a> </b>
 
 
