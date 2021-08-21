@@ -15,7 +15,8 @@
 ## Developer Contact and Donate
 
 ### Contact info:
-* Name: Venis Prajapati
+Venis Prajapati
+* Email: projects.venisprajapati@gmail.com
 * Github: <a href="github.com/venisprajapati">github.com/venisprajapati</a>
 * LinkedIn: <a href="linkedin.com/in/venis-prajapati-a12b1019b">linkedin.com/in/venis-prajapati-a12b1019b</a>
 * Medium: <a href="medium.com/@venisprajapati2102">medium.com/@venisprajapati2102</a>
@@ -86,6 +87,7 @@ Follow below important links:
 - There is some specific grid like desing to Scan specific box (i.e. around the bubble) in OMR Sheet so that function will count the number of Black pixels in specific area (or bubble), if count of black pixels is above specific value then it is filled or marked otherwise not filled or marked by the user (or student).
 
 - 90 MCQs Bubble OMR Sheet with grid to count black pixels in specific square of grid.
+
     ![grid-omr](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/grid_.png?raw=true)
 
 - Returned objects from scan function used to make results with answers given by users and scanned by openpyxl functions, then results are added to students excel file; then omr resonses and results are used to make a document that contains all details, ranking, analysis by marks, analysis by sections, results in details for individual students and also a response ticked by students in OMR Sheet.
