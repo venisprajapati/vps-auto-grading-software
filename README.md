@@ -47,6 +47,7 @@ Follow below important links:
 
 ## Technical Info
 
+- requirements: python 3.9 support, web browser
 - languages: Python 3.9.6, Batchfile, HTML, CSS
 - libraries used: 
     - Flask
