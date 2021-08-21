@@ -30,7 +30,7 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
 
     footer_para = footer.paragraphs[0]
 
-    footer_para.text = f"{str(exam_name_)} {str(exam_date_)}"
+    footer_para.text = f"{str(exam_name_)} {str(exam_date_)}\t\tgithub.com/venisprajapati/vps-auto-grading-software"
 
     # title
     document.add_heading("Venis Prajapati's Auto grading Software", 0)

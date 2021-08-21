@@ -1,5 +1,6 @@
 # Venis Prajapati's Auto grading software
 
+
 <p align="right">
     Date of first Availablity: 21 August, 2021
 </p>
@@ -14,13 +15,13 @@
 
 ### Contact info:
 * Name: Venis Prajapati
-* Github: github.com/venisprajapati
-* LinkedIn: linkedin.com/in/venis-prajapati-a12b1019b
-* Medium: medium.com/@venisprajapati2102
+* Github: <a href="github.com/venisprajapati">github.com/venisprajapati</a>
+* LinkedIn: <a href="linkedin.com/in/venis-prajapati-a12b1019b">linkedin.com/in/venis-prajapati-a12b1019b</a>
+* Medium: <a href="medium.com/@venisprajapati2102">medium.com/@venisprajapati2102</a>
 
 ### Donate
 
-* Buy coffee: buymeacoffee.com/venisprajapati
+* Buy me a coffee: <a href="buymeacoffee.com/venisprajapati">buymeacoffee.com/venisprajapati</a>
 
 
 ## Installation
@@ -30,7 +31,7 @@
 - Install python <a href="https://www.python.org/ftp/python/3.9.6/python-3.9.6-amd64.exe">Python 3.9.6</a>
 - Run <b>install.bat</b> to install all dependencies in the project
 - Run <b>vps-ags.bat</b> to start the software
-- Server runs with output like: <b>Venis Prajapati's Auto grading Software Started At PORT: http://127.0.0.1:2102/ </b>
+- Server runs with output like: <b>Venis Prajapati's Auto grading Software Started At PORT: <a href="http://127.0.0.1:2102/">http://127.0.0.1:2102/</a> </b>
 
 
 ## Usage
