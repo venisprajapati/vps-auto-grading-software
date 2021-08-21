@@ -6,8 +6,9 @@ file-name: app.py
 
 from __future__ import barry_as_FLUFL
 
-__version__ = '1.0.1'
 __author__ = 'Venis Prajapati'
+__license__ = 'MIT License'
+__version__ = '1.0.1'
 
 
 import os
