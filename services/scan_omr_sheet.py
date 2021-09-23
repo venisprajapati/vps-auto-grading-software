@@ -25,11 +25,13 @@ def ScanOmrs(total_mcqs):
             img = find_ROI(im, True)
             img = ResizeImagewithAspectRatio(
                 img, width=564, inter=cv2.INTER_AREA)
+            img = cv2.resize(img, (564, 820), interpolation=cv2.INTER_AREA)
 
         else:
             img = find_ROI(im, False)
             img = ResizeImagewithAspectRatio(
                 img, width=564, inter=cv2.INTER_AREA)
+            img = cv2.resize(img, (564, 394), interpolation=cv2.INTER_AREA)
 
         image = BlackAndWhiteImage(img)
 
