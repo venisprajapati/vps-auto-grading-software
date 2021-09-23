@@ -2,14 +2,16 @@ import cv2
 import numpy as np
 
 
-def order_corner_points(corners):
+def orderCornerPoints(corners):
+
     corners = [(corner[0][0], corner[0][1]) for corner in corners]
     top_r, top_l, bottom_l, bottom_r = corners[0], corners[1], corners[2], corners[3]
     return (top_l, top_r, bottom_r, bottom_l)
 
 
-def perspective_transform(image, corners):
-    ordered_corners = order_corner_points(corners)
+def PerspectiveTransform(image, corners):
+
+    ordered_corners = orderCornerPoints(corners)
     top_l, top_r, bottom_r, bottom_l = ordered_corners
 
     width_A = np.sqrt(((bottom_r[0] - bottom_l[0])
@@ -34,7 +36,7 @@ def perspective_transform(image, corners):
     return cv2.warpPerspective(image, matrix, (width, height))
 
 
-def rotate_image(image, angle):
+def rotateImage(image, angle):
     (h, w) = image.shape[:2]
     (cX, cY) = (w / 2, h / 2)
 
@@ -65,21 +67,25 @@ def find_ROI(img, omrType):
 
     approx = cv2.approxPolyDP(
         contours[0], 0.01*cv2.arcLength(contours[0], True), True)
+
     if len(approx) == 4:
-        # print("square")
+
         cv2.drawContours(img, [contours[0]], 0, (0, 0, 255), 2)
-        transformed = perspective_transform(image, approx)
+        transformed = PerspectiveTransform(image, approx)
 
     if (omrType):
+
         h, w, c = transformed.shape
         if (w > h):
-            rotated = rotate_image(transformed, -90)
+            rotated = rotateImage(transformed, -90)
         else:
             rotated = transformed
+
     else:
+
         h, w, c = transformed.shape
         if (w < h):
-            rotated = rotate_image(transformed, -90)
+            rotated = rotateImage(transformed, -90)
         else:
             rotated = transformed
 

@@ -62,16 +62,16 @@ def ScanMCQs(image):
 
 def ScanFunction(image):
     number_of_black_pixels = np.sum(image == 0)
-    if (number_of_black_pixels > 310):
+    if (number_of_black_pixels > 240):
         return True
     else:
         return False
 
 
 def BlackAndWhiteImage(image):
-    blur = cv2.GaussianBlur(image, (1, 1), 0)
+    blur = cv2.GaussianBlur(image, (3, 1), 0)
     gray = cv2.cvtColor(blur, cv2.COLOR_BGR2GRAY)
-    threshold_level = 121
+    threshold_level = 64
 
     mask = gray < threshold_level
     image[mask] = (0, 0, 0)

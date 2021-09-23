@@ -8,7 +8,7 @@ from __future__ import barry_as_FLUFL
 
 __author__ = 'Venis Prajapati'
 __license__ = 'MIT License'
-__version__ = '1.0.1'
+__version__ = '2.0.1'
 
 
 import os
@@ -116,7 +116,7 @@ def result():
 
 @app.route('/info', methods=['GET'])
 def info():
-    
+
     return render_template('info.html')
 
 
