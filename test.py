@@ -3,11 +3,9 @@ import glob
 from services.functions import ResizeImagewithAspectRatio, BlackAndWhiteImage, ScanID, ScanMCQs
 from services.contour_ import find_ROI
 
-image_list = glob.glob('test/190/*.jpg')
-image_list += glob.glob('test/190/*.jpeg')
-image_list += glob.glob('test/190/*.png')
-
-# image_list = glob.glob('test/*.jpg')
+image_list = glob.glob('test/*.jpg')
+image_list += glob.glob('test/*.jpeg')
+image_list += glob.glob('test/*.png')
 
 id_point = (20, 48)
 start_point = [(20, 220), (134, 48), (134, 220), (248, 48), (248, 220), (362, 48), (362, 220), (474, 48), (474, 220),
@@ -15,18 +13,18 @@ start_point = [(20, 220), (134, 48), (134, 220), (248, 48), (248, 220), (362, 48
 
 ScannedOmrs = []
 
-total_mcqs = 120
-
-image_list = ['test/190/img079.jpg']
+total_mcqs = 190
 
 for im in image_list:
 
     if total_mcqs > 90:
         img = find_ROI(im, True)
         img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
+        img = cv2.resize(img, (564, 820), interpolation=cv2.INTER_AREA)
     else:
         img = find_ROI(im, False)
         img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
+        img = cv2.resize(img, (564, 394), interpolation=cv2.INTER_AREA)
     image = BlackAndWhiteImage(img)
 
     for pts in range(0, len(start_point)):
@@ -39,9 +37,8 @@ for im in image_list:
 
         cv2.rectangle(image, start, end, color, 1)
 
-    # image = cv2.resize(image, (624, 524), interpolation=cv2.INTER_AREA)
-    # cv2.imshow('test-img', image)
-    # cv2.waitKey(0)
+    cv2.imshow('test-omr', image)
+    cv2.waitKey(0)
 
     sheet = {}
 
@@ -69,4 +66,4 @@ for im in image_list:
 
     ScannedOmrs.append(sheet)
 
-print(ScannedOmrs)
+# print(ScannedOmrs)
