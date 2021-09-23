@@ -5,13 +5,11 @@ from services.functions import ResizeImagewithAspectRatio, BlackAndWhiteImage, S
 from services.contour_ import find_ROI
 
 
-def ScanOmrs(total_mcqs, e):
+def ScanOmrs(total_mcqs):
 
     image_list = glob.glob('./uploads/omrs/*.jpg')
     image_list += glob.glob('./uploads/omrs/*.jpeg')
     image_list += glob.glob('./uploads/omrs/*.png')
-
-    image_list = [e]
 
     id_point = (20, 48)
     start_point = [(20, 220), (134, 48), (134, 220), (248, 48), (248, 220), (362, 48), (362, 220), (474, 48), (474, 220),

@@ -86,13 +86,13 @@ Follow below important links:
 ### Contact info:
 Venis Prajapati
 * Email: projects.venisprajapati@gmail.com
-* Github: <a href="github.com/venisprajapati">github.com/venisprajapati</a>
-* LinkedIn: <a href="linkedin.com/in/venis-prajapati-a12b1019b">linkedin.com/in/venis-prajapati-a12b1019b</a>
-* Medium: <a href="medium.com/@venisprajapati2102">medium.com/@venisprajapati2102</a>
+* Github: <a href="https://github.com/venisprajapati">github.com/venisprajapati</a>
+* LinkedIn: <a href="https://linkedin.com/in/venis-prajapati-a12b1019b">linkedin.com/in/venis-prajapati-a12b1019b</a>
+* Medium: <a href="https://medium.com/@venisprajapati2102">medium.com/@venisprajapati2102</a>
 
 ### Donate
 
-* Buy me a coffee: <a href="buymeacoffee.com/venisprajapati">buymeacoffee.com/venisprajapati</a>
+* Buy me a coffee: <a href="https://buymeacoffee.com/venisprajapati">buymeacoffee.com/venisprajapati</a>
 
 
 ## Screen Shots

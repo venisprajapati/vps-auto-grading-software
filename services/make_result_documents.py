@@ -169,7 +169,7 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
 
         for i_mcq_ in range(1, len(omr)):
             omr_par_.add_run(str(i_mcq_)).bold = True
-            omr_par_.add_run(str(omr[i_mcq_]))
+            omr_par_.add_run(str(f'{omr[i_mcq_]},'))
 
         document.add_paragraph(
             "________________________________________________________________________________________________________________________________")
