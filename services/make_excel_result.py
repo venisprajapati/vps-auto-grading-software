@@ -13,8 +13,8 @@ def MakeExcelResult(results, name, date):
     if (new_sheet_ not in sheet_names):
         ws = wb.create_sheet(new_sheet_)
 
-        ws['A1'] = {name}
-        ws['B1'] = {date}
+        ws['A1'] = name
+        ws['B1'] = date
         ws['A2'] = 'id'
         ws['B2'] = 'obtained marks'
 

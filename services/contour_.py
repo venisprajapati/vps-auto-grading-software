@@ -53,7 +53,7 @@ def rotate_image(image, angle):
 
 def find_ROI(img, omrType):
 
-    # img = cv2.imread(img)
+    img = cv2.imread(img)
     image = img.copy()
 
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

@@ -9,7 +9,7 @@ def ScanID(image):
     A = image[:, 0:22]
     B = image[:, 22:22*2]
     C = image[:, 22*2:22*3]
-    D = image[:, 22*3:22*4 - 2]
+    D = image[:, 22*3:22*4]
     for i in range(0, 10):
         scan_img = A[0 + i*17:17 + i*17, :]
         if (ScanFunction(scan_img)):
@@ -51,7 +51,7 @@ def ScanMCQs(image):
     A = 'A' if ScanFunction(image[:, 0:22]) else ''
     B = 'B' if ScanFunction(image[:, 22:22*2]) else ''
     C = 'C' if ScanFunction(image[:, 22*2:22*3]) else ''
-    D = 'D' if ScanFunction(image[:, 22*3:22*4 - 2]) else ''
+    D = 'D' if ScanFunction(image[:, 22*3:22*4]) else ''
     ans = A + B + C + D
     if (len(ans) == 0):
         ans = ''
@@ -62,14 +62,14 @@ def ScanMCQs(image):
 
 def ScanFunction(image):
     number_of_black_pixels = np.sum(image == 0)
-    if (number_of_black_pixels > 252):
+    if (number_of_black_pixels > 310):
         return True
     else:
         return False
 
 
 def BlackAndWhiteImage(image):
-    blur = cv2.GaussianBlur(image, (3, 1), 0)
+    blur = cv2.GaussianBlur(image, (1, 1), 0)
     gray = cv2.cvtColor(blur, cv2.COLOR_BGR2GRAY)
     threshold_level = 121
 
