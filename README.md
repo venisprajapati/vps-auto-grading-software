@@ -81,7 +81,7 @@
     python test.py
     ```
 - This will show detected contour, perspective transform, draw rectangles in mcq area as shown in above image in Concept section.
-- In line no.-14, you can change to respective omr size i.e. 190, 120.., .
+- In line no.-14, you can change to respective omr size i.e. 190, 120, ..,
     ```
     total_mcqs = 90
     ```
@@ -118,12 +118,12 @@ Licensed under the [MIT](LICENSE) license.
 ## Screen Shots
 
 1) Home Screen
-    ![home-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_main_page.png?raw=true)
+    ![home-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_main-page.png?raw=true)
 
 2) Result Screen
-    ![result-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_result_page.png?raw=true)
+    ![result-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_result-page.png?raw=true)
 
 3) About Screen
-    ![info-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_info_page.png?raw=true)
+    ![info-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_info-page.png?raw=true)
 
 *thank you*
