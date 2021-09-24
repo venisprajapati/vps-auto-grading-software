@@ -64,6 +64,13 @@ def index():
 
         if (request.form.getlist('section') == ['on']):
 
+            s_1_n = str(request.form['s1n']
+                        ) if (request.form['s1n']) else 'Section - 1'
+            s_2_n = str(request.form['s2n']
+                        ) if (request.form['s2n']) else 'Section - 2'
+            s_3_n = str(request.form['s3n']
+                        ) if (request.form['s3n']) else 'Section - 3'
+
             s_1 = int(request.form['section-1']
                       ) if (request.form['section-1']) else 0
             s_2 = int(request.form['section-2']
@@ -71,7 +78,7 @@ def index():
             s_3 = int(request.form['section-3']
                       ) if (request.form['section-3']) else 0
             MakeFinalResults(exam_name=request.form['examName'].strip(), exam_date=request.form['examDate'], total_mcqs=request.form['total-mcq'],
-                             positive_marks=request.form['positive-marks'], negative_marks=request.form['negative-marks'], section=True, section_1=s_1, section_2=s_2, section_3=s_3)
+                             positive_marks=request.form['positive-marks'], negative_marks=request.form['negative-marks'], section=True, section_1_name=s_1_n, section_2_name=s_2_n, section_3_name=s_3_n, section_1=s_1, section_2=s_2, section_3=s_3)
 
         else:
             MakeFinalResults(exam_name=request.form['examName'].strip(), exam_date=request.form['examDate'], total_mcqs=request.form['total-mcq'],

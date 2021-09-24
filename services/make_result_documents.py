@@ -3,7 +3,7 @@ from docx import Document
 from docx.shared import Mm
 
 
-def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, total_marks):
+def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, total_marks, section_1_n='', section_2_n='', section_3_n=''):
 
     document = Document()
 
@@ -77,9 +77,9 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
         row.cells[0].text = 'Rank'
         row.cells[1].text = 'ID'
         row.cells[2].text = 'Name'
-        row.cells[3].text = 'Section-1'
-        row.cells[4].text = 'Section-2'
-        row.cells[5].text = 'Section-3'
+        row.cells[3].text = section_1_n
+        row.cells[4].text = section_2_n
+        row.cells[5].text = section_3_n
         row.cells[6].text = 'Marks Obt'
 
         for result in results:
@@ -135,13 +135,13 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
         main_paragraph.add_run(str(result['obtained_total_marks']))
 
         if (section_ == True):
-            main_paragraph.add_run('\nSection 1: ').bold = True
+            main_paragraph.add_run(f'\n{section_1_n}: ').bold = True
             main_paragraph.add_run(
                 str(result['section_1_marks'] if result.get('section_1') else 'N/A'))
-            main_paragraph.add_run('\t\t\tSection 2: ').bold = True
+            main_paragraph.add_run(f'\t\t\t{section_2_n}: ').bold = True
             main_paragraph.add_run(
                 str(result['section_2_marks'] if result.get('section_2') else 'N/A'))
-            main_paragraph.add_run('\t\t\tSection 3: ').bold = True
+            main_paragraph.add_run(f'\t\t\t{section_3_n}: ').bold = True
             main_paragraph.add_run(
                 str(result['section_3_marks'] if result.get('section_3') else 'N/A'))
 
