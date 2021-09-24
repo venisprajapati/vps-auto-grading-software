@@ -81,18 +81,21 @@ Follow below important links:
 - <a href="https://github.com/venisprajapati/vps-auto-grading-software/issues">Issues</a>
 
 
-## Developer Contact and Donate
+## Developer
 
-### Contact info:
+### Developer contact info:
 Venis Prajapati
 * Email: projects.venisprajapati@gmail.com
 * Github: <a href="https://github.com/venisprajapati">github.com/venisprajapati</a>
 * LinkedIn: <a href="https://linkedin.com/in/venis-prajapati-a12b1019b">linkedin.com/in/venis-prajapati-a12b1019b</a>
 * Medium: <a href="https://medium.com/@venisprajapati2102">medium.com/@venisprajapati2102</a>
 
-### Donate
 
-* Buy me a coffee: <a href="https://buymeacoffee.com/venisprajapati">buymeacoffee.com/venisprajapati</a>
+## License
+
+Copyright (c) 2021 Venis Prajapati.
+
+Licensed under the [MIT](LICENSE) license.
 
 
 ## Screen Shots
@@ -105,11 +108,3 @@ Venis Prajapati
 
 3) About Screen
     ![info-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_info_page.png?raw=true)
-
-## License
-
-Copyright (c) 2021 Venis Prajapati.
-
-Licensed under the [MIT](LICENSE) license.
-
-*Thank you, Have a nice day ;)*
