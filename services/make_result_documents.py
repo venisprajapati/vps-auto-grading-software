@@ -174,4 +174,4 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
         document.add_paragraph(
             "________________________________________________________________________________________________________________________________")
 
-    document.save(f'./result/{exam_name_}_{exam_date_.replace("-", "_")}.docx')
+    document.save(f'./result/{exam_name_.replace(" ", "_").replace("-", "_")}_{exam_date_.replace("-", "_")}.docx')

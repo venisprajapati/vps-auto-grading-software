@@ -70,7 +70,7 @@ def find_ROI(img, omrType):
 
     if len(approx) == 4:
 
-        cv2.drawContours(img, [contours[0]], 0, (0, 0, 255), 2)
+        # cv2.drawContours(img, [contours[0]], 0, (0, 0, 255), 2)
         transformed = PerspectiveTransform(image, approx)
 
     if (omrType):
