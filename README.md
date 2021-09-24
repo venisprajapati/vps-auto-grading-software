@@ -15,7 +15,7 @@
 ## Technical Info
 
 - Requirements: python 3.9 support, web browser
-- languages: Python 3.9.6, Batchfile, HTML, CSS
+- languages: Python == 3.9.6, Batchfile, HTML, CSS
 - libraries used: 
     - Flask
     - opencv
@@ -105,5 +105,11 @@ Venis Prajapati
 
 3) About Screen
     ![info-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_info_page.png?raw=true)
+
+## License
+
+Copyright (c) 2021 Venis Prajapati.
+
+Licensed under the [MIT](LICENSE) license.
 
 *Thank you, Have a nice day ;)*
