@@ -16,7 +16,7 @@ import webbrowser
 from waitress import serve
 from threading import Timer
 from werkzeug.utils import secure_filename
-from flask import Flask, render_template, redirect, send_file, request
+from flask import Flask, render_template, redirect, send_file, request, send_from_directory
 from services.final_result_ import MakeFinalResults
 
 
@@ -127,6 +127,11 @@ def info():
     return render_template('info.html')
 
 
+@app.route('/favicon.ico') 
+def favicon(): 
+    return send_from_directory(os.path.join(app.root_path), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
+
+
 def open_web_browser():
     webbrowser.open_new('http://127.0.0.1:2102/')
 
@@ -136,7 +141,7 @@ if __name__ == '__main__':
 
     print("Venis Prajapati's Auto grading Software Started At PORT: http://127.0.0.1:2102/")
 
-    Timer(1, open_web_browser).start()
-    serve(app, host="127.0.0.1", port=2102)
+    # Timer(1, open_web_browser).start()
+    # serve(app, host="127.0.0.1", port=2102)
 
-    # app.run(port=2102, debug=True)
+    app.run(port=2102, debug=True)
