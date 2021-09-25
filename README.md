@@ -1,5 +1,5 @@
 
-# Venis Prajapati's Auto grading software
+# vps-auto-grading-software
 
 
 <p align="right">
@@ -9,7 +9,7 @@
 
 ## Purpose
 
-- Open-source web-browser based general purpose software to make bubble-omr sheet checking and grading task Easy and Efficient, that runs on localhost using python (virtual environment).
+- Open-source Web-browser based General purpose Software to make bubble OMR sheet Checking and Grading task Easy & Efficient, that runs on localhost using Python (virtual environment).
 
 
 ## Technical Info
@@ -30,17 +30,17 @@
 
 ## Concept
 
-- Scanned images will be processed to find biggest contour in img, then after applying some <b>Threshold</b> algorithm will crop scanned image using <b>Perspective Transform</b>.
+- Scanned images will be processed to find biggest contour in image, after applying some <b>Threshold</b>, algorithm will crop scanned image using <b>Perspective Transform</b>.
 
-- Converted scanned images of OMR sheet to specific width and height with maintain aspect ratio aintain, then use <b>GaussianBlur</b>; make it grayscale using <b>cvtColor</b> with <b>COLOR_BGR2GRAY</b> and apply some threshold to convert the pixels above threshold value to Black.
+- Converted scanned images of OMR sheet with specific width and height with maintain aspect ratio will be given <b>GaussianBlur</b>; make it grayscale using <b>cvtColor</b> with <b>COLOR_BGR2GRAY</b> and apply some threshold to convert the pixels above threshold value to Black.
 
-- There is some specific grid like desing to Scan specific box (i.e. around the bubble) in OMR Sheet so then functions will count the <b>number of Black pixels</b> in specific area (or bubble), if count of black pixels is above specific value then it is filled or marked otherwise not filled or marked by the user (or student).
+- There are specific rectangle gird like design to Scan specific Area, then inside area it will scan virtual grid like area inside OMR rectangle (i.e. around the bubble) in OMR Sheet so then functions will count the <b>number of Black pixels</b> in specific area (or bubble), if count of black pixels is above specific value then it is filled or marked otherwise not filled or marked by the user (or student).
 
 - 190 MCQs Bubble OMR Sheet with perspective-transformed image and mcq area highlighted to check count black pixels in specific square in virtual grid.
 
     ![contour-and-mcq-area](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/contour-and-mcq-area.png?raw=true)
 
-- Returned objects from scan function used to make results with answers given by users and scanned by openpyxl functions, then results are added to students excel file; then omr resonses and results are used to make a document that contains all details, ranking, analysis by marks, analysis by sections, results in details for individual students and also a response ticked by students in OMR Sheet.
+- Returned objects/dictionaries from scan function used to make results with answers given by users and scanned by openpyxl functions, then results are added to students excel file; then omr resonses and results are used to make a document that contains all details, ranking, analysis by marks, analysis by sections, results in details for individual students and also a response ticked by students in OMR Sheet.
 
 - Hence, OMR Sheet is checked and you get result and student-report-cards.
 
@@ -61,7 +61,7 @@
 - Download or Clone Project from <a href="https://github.com/venisprajapati/vps-auto-grading-software">GitHub</a>
 - Unzip :/ the Project
 - Install Python 3.9.6
-- Create virtual environment and activate venv
+- Create virtual environment(venv) <b>env</b> and activate <b>env</b>
 - Run following command to install required packages & libraries
     ```
     pip3 install -r requirements.txt
@@ -76,21 +76,21 @@
 
 ## Test
 
-- For testing, put scanned images in <b>test</b> directory, then run following command
+- For testing, you may put scanned images in <b>test</b> directory, then run following command
     ```
     python test.py
     ```
 - This will show detected contour, perspective transform, draw rectangles in mcq area as shown in above image in Concept section.
-- In line no.-14, you can change to respective omr size i.e. 190, 120, ..,
+- In line no. 14, you can change to respective omr size, as per requirements i.e. 190, 120, ..,
     ```
     total_mcqs = 90
     ```
 - It will also print python dictionary, containing information of all scanned OMRs for test.
 
 
-## Usage
+## Usage / bugs
 
-Follow below important links:
+Follow the important links given below:
 
 - <a href="https://github.com/venisprajapati/vps-auto-grading-software/blob/main/User-guide.pdf">User Guide</a>
 - <a href="https://medium.com/@venisprajapati2102/about-vps-auto-grading-software-5b611ffe6c74">Medium Blog</a>
@@ -100,8 +100,7 @@ Follow below important links:
 
 ## Developer
 
-### Developer contact info:
-Venis Prajapati
+### Venis Prajapati
 * Email: projects.venisprajapati@gmail.com
 * Github: <a href="https://github.com/venisprajapati">github.com/venisprajapati</a>
 * LinkedIn: <a href="https://linkedin.com/in/venis-prajapati-a12b1019b">linkedin.com/in/venis-prajapati-a12b1019b</a>

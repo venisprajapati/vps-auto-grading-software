@@ -4,7 +4,9 @@ author: venisprajapati
 file-name: app.py
 """
 
+
 from __future__ import barry_as_FLUFL
+
 
 __author__ = 'Venis Prajapati'
 __license__ = 'MIT License'
@@ -141,7 +143,7 @@ if __name__ == '__main__':
 
     print("Venis Prajapati's Auto grading Software Started At PORT: http://127.0.0.1:2102/")
 
-    # Timer(1, open_web_browser).start()
-    # serve(app, host="127.0.0.1", port=2102)
+    Timer(1, open_web_browser).start()
+    serve(app, host="127.0.0.1", port=2102)
 
-    app.run(port=2102, debug=True)
+    # app.run(port=2102, debug=True)
