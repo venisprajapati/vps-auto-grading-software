@@ -9,8 +9,8 @@ from __future__ import barry_as_FLUFL
 
 
 __author__ = 'Venis Prajapati'
-__license__ = 'MIT License'
-__version__ = '2.0.1'
+__license__ = 'Apache-2.0 License'
+__version__ = 'v.3.0'
 
 
 import os

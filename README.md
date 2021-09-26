@@ -111,7 +111,7 @@ Follow the important links given below:
 
 Copyright (c) 2021 Venis Prajapati.
 
-Licensed under the [MIT](LICENSE) license.
+Licensed under the [Apache-2.0 License](LICENSE) license.
 
 
 ## Screen Shots
