@@ -90,6 +90,8 @@
 
 ## Usage / bugs
 
+* [Functions.md](Functions.md)
+
 ### For customization in software features, you can mail using link given below.
 
 Follow the important links given below:
