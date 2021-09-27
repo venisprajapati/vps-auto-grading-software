@@ -38,7 +38,7 @@
 
 - 190 MCQs Bubble OMR Sheet with perspective-transformed image and mcq area highlighted to check count black pixels in specific square in virtual grid.
 
-    ![contour-and-mcq-area](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/contour-and-mcq-area.png?raw=true)
+    ![contour-and-mcq-area](screen-shots/contour-and-mcq-area.png?raw=true)
 
 - Returned objects/dictionaries from scan function used to make results with answers given by users and scanned by openpyxl functions, then results are added to students excel file; then omr resonses and results are used to make a document that contains all details, ranking, analysis by marks, analysis by sections, results in details for individual students and also a response ticked by students in OMR Sheet.
 
@@ -74,28 +74,37 @@
 - Server runs with output like: <b>Venis Prajapati's Auto grading Software Started At PORT: <a href="http://127.0.0.1:2102/">http://127.0.0.1:2102/</a> </b>
 
 
-## Test
+## Testing
 
-- For testing, you may put scanned images in <b>test</b> directory, then run following command
+- For testing, you may put scanned images of 90 and 190 mcq omr-sheet in <b>test/mcq-90</b> and <b>test/mcq-190</b> directory respectively, then run <b>test.bat</b> in current directory.
+
+- For linux & mac run following command after putting scanned images in respective directory in <b>test/</b>.
     ```
-    python test.py
+    python3 test.py
     ```
+
 - This will show detected contour, perspective transform, draw rectangles in mcq area as shown in above image in Concept section.
-- In line no. 14, you can change to respective omr size, as per requirements i.e. 190, 120, ..,
-    ```
-    total_mcqs = 90
-    ```
+
 - It will also print python dictionary, containing information of all scanned OMRs for test.
 
 
 ## Usage / bugs
 
+### For customization in software features, you can mail using link given below.
+
 Follow the important links given below:
 
-- <a href="https://github.com/venisprajapati/vps-auto-grading-software/blob/main/User-guide.pdf">User Guide</a>
-- <a href="https://medium.com/@venisprajapati2102/about-vps-auto-grading-software-5b611ffe6c74">Medium Blog</a>
-- <a href="https://github.com/venisprajapati/vps-auto-grading-software/issues">Issues</a>
+- <a href="mailto: projects.venisprajapati@gmail.com">Email</a>
 - <a href="https://github.com/venisprajapati/vps-auto-grading-software">Github</a>
+- <a href="https://github.com/venisprajapati/vps-auto-grading-software/issues">Issues</a>
+- <a href="https://github.com/venisprajapati/vps-auto-grading-software/discussions">Discussions</a>
+- <a href="https://medium.com/@venisprajapati2102/about-vps-auto-grading-software-5b611ffe6c74">Blog</a>
+
+
+## Contributing
+
+- Clone and Fork project repository, add/commit changes to new branch "new-feature-{a0}-" or "bug-fix-{a0}-"
+- Follow the community guidelines at [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) .
 
 
 ## Developer
@@ -107,22 +116,30 @@ Follow the important links given below:
 * Medium: <a href="https://medium.com/@venisprajapati2102">medium.com/@venisprajapati2102</a>
 
 
+## NOTICE
+
+Read [NOTICE](NOTICE) , before using or contributing to the project.
+
+
 ## License
 
 Copyright (c) 2021 Venis Prajapati.
 
-Licensed under the [Apache-2.0 License](LICENSE) license.
+Licensed under the [Apache-2.0 License](LICENSE) .
 
 
 ## Screen Shots
 
 1) Home Screen
-    ![home-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_main-page.png?raw=true)
+
+    ![home-page](screen-shots/vps-ags_main-page.png?raw=true)
 
 2) Result Screen
-    ![result-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_result-page.png?raw=true)
 
-3) About Screen
-    ![info-page](https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/vps-ags_info-page.png?raw=true)
+    ![result-page](screen-shots/vps-ags_result-page.png?raw=true)
 
-*thank you*
+3) Info Screen
+
+    ![info-page](screen-shots/vps-ags_info-page.png?raw=true)
+
+*happy exams & results*

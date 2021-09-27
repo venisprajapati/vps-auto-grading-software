@@ -10,7 +10,7 @@ from __future__ import barry_as_FLUFL
 
 __author__ = 'Venis Prajapati'
 __license__ = 'Apache-2.0 License'
-__version__ = 'v.3.0'
+__version__ = 'v 2.0'
 
 
 import os
@@ -129,8 +129,8 @@ def info():
     return render_template('info.html')
 
 
-@app.route('/favicon.ico') 
-def favicon(): 
+@app.route('/favicon.ico')
+def favicon():
     return send_from_directory(os.path.join(app.root_path), 'favicon.ico', mimetype='image/vnd.microsoft.icon')
 
 

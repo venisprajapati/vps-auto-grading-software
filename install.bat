@@ -3,6 +3,7 @@ python -m venv env
 CALL env/Scripts/activate.bat
 python -m pip install --upgrade pip
 mkdir uploads
+mkdir result
 cd uploads
 mkdir omrs
 cd ..

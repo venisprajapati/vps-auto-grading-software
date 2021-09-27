@@ -1,3 +1,0 @@
-"env/Scripts/activate.bat"
-"env/Scripts/python.exe"
-"env/Scripts/pip.exe"

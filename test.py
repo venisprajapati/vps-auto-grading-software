@@ -3,28 +3,23 @@ import glob
 from services.functions import ResizeImagewithAspectRatio, BlackAndWhiteImage, ScanID, ScanMCQs
 from services.contour_ import find_ROI
 
-image_list = glob.glob('test/*.jpg')
+
+image_list_90 = glob.glob('test/mcq-90/*.jpg')
+image_list_90 += glob.glob('test/mcq-90/*.jpeg')
+image_list_90 += glob.glob('test/mcq-90/*.png')
+
+image_list_190 = glob.glob('test/mcq-190/*.jpg')
+image_list_190 += glob.glob('test/mcq-190/*.jpeg')
+image_list_190 += glob.glob('test/mcq-190/*.png')
 
 id_point = (20, 48)
-start_point = [(22, 220), (134, 49), (134, 220), (246, 49), (246, 220), (358, 49), (358, 220), (470, 49), (470, 220),
-               (22, 447), (22, 618), (134, 447), (134, 618), (246, 447), (246, 618), (358, 447), (358, 618), (470, 447), (470, 618)]
+start_point = [(20, 220), (134, 48), (134, 220), (248, 48), (248, 220), (362, 48), (362, 220), (474, 48), (474, 220),
+               (20, 444), (20, 616), (134, 444), (134, 616), (248, 444), (248, 616), (362, 444), (362, 616), (474, 444), (474, 616)]
 
 ScannedOmrs = []
 
-total_mcqs = 90
 
-for im in image_list:
-
-    if total_mcqs > 90:
-
-        img = find_ROI(im, True)
-        img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
-        img = cv2.resize(img, (564, 820), interpolation=cv2.INTER_AREA)
-
-    else:
-        img = find_ROI(im, False)
-        img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
-        img = cv2.resize(img, (564, 394), interpolation=cv2.INTER_AREA)
+def scan_omr(image, total_mcqs):
 
     image = BlackAndWhiteImage(img)
 
@@ -76,5 +71,23 @@ for im in image_list:
                 break
 
     ScannedOmrs.append(sheet)
+
+
+for im in image_list_90:
+
+    img = find_ROI(im, False)
+    img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
+    img = cv2.resize(img, (564, 394), interpolation=cv2.INTER_AREA)
+
+    scan_omr(img, 90)
+
+for im in image_list_190:
+
+    img = find_ROI(im, True)
+    img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
+    img = cv2.resize(img, (564, 820), interpolation=cv2.INTER_AREA)
+
+    scan_omr(img, 190)
+
 
 print(ScannedOmrs)
