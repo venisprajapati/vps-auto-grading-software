@@ -2,11 +2,14 @@
 
 ## Input
 
-### omrs ( .jpg/.jpeg (prefer) or .png )
+### 1. omrs ( .jpg/.jpeg (prefer) or .png )
 
-* scanned omr sheet of 90 and 190 mcqs (id number is mandatory in omrs)
+* Black & white image - 300 dpi (A4 preferable)
+* Print must be in actual size or fit to scale (refer to omrs)
+* Scanned omr sheet of 90 and 190 mcqs
+* Id number is mandatory in omrs
 
-### students.xlsx (Sheet1)
+### 2. students.xlsx (Sheet1)
 
 | A | B |
 | :-------------: | :-------------: |
@@ -15,7 +18,7 @@
 | A001 | Abcd Stuv |
 | J124 | Cdef Ghijk |
 
-### answers.xlsx (Sheet1)
+### 3. answers.xlsx (Sheet1)
 
 | A | B |
 | :-------------: | :-------------: |
@@ -27,7 +30,7 @@
 
 ## Output
 
-### results.docx (exam-name_exam-date.docx)
+### 1. results.docx (exam-name_exam-date.docx)
 
 * Header + Footer (important name, exam, current-date, link)
 * Exam name, Exam date, total-marks
@@ -36,9 +39,9 @@
 * Results for Individual Students
 * Checked OMRs Of Individual Students
 
-### students.xlsx (exam-name_exam-date)
+### 2. students.xlsx (exam-name_exam-date)
 
-* you can add absent students further but they won't get actual rank, instead process whole exam again.
+* User can add absent students further but they won't get actual rank, instead process whole exam again.
 
 | A | B |
 | :-------------: | :-------------: |
