@@ -22,7 +22,7 @@ def MakeFinalResults(exam_name, exam_date, total_mcqs, positive_marks, negative_
     s_2 = section_2
     s_3 = section_3
 
-    if (section == True):
+    if (section):
         result, omrs = Result(t_m, positive_=p_m, negative_=n_m, section=True,
                               section_1=s_1, section_2=s_2, section_3=s_3)
 

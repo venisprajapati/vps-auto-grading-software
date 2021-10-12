@@ -65,7 +65,7 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
         cells[5].text = str(result['incorrect_count'])
         cells[6].text = str(result['obtained_total_marks'])
 
-    if (section_ == True):
+    if (section_):
 
         # heading 2
         document.add_heading("Result Analysis Report by Sections", 2)
@@ -134,7 +134,7 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
         main_paragraph.add_run('\tMarks Obt: ').bold = True
         main_paragraph.add_run(str(result['obtained_total_marks']))
 
-        if (section_ == True):
+        if (section_):
             main_paragraph.add_run(f'\n{section_1_n}: ').bold = True
             main_paragraph.add_run(
                 str(result['section_1_marks'] if result.get('section_1') else 'N/A'))
