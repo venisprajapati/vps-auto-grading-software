@@ -96,11 +96,9 @@
 
 Follow the important links given below:
 
-- <a href="mailto: projects.venisprajapati@gmail.com">Email</a>
 - <a href="https://github.com/venisprajapati/vps-auto-grading-software">Github</a>
 - <a href="https://github.com/venisprajapati/vps-auto-grading-software/issues">Issues</a>
 - <a href="https://github.com/venisprajapati/vps-auto-grading-software/discussions">Discussions</a>
-- <a href="https://medium.com/@venisprajapati2102/about-vps-auto-grading-software-5b611ffe6c74">Blog</a>
 
 
 ## Contributing
@@ -112,7 +110,6 @@ Follow the important links given below:
 ## Developer
 
 ### Venis Prajapati
-* Email: projects.venisprajapati@gmail.com
 * Github: <a href="https://github.com/venisprajapati">github.com/venisprajapati</a>
 * LinkedIn: <a href="https://linkedin.com/in/venis-prajapati-a12b1019b">linkedin.com/in/venis-prajapati-a12b1019b</a>
 * Medium: <a href="https://medium.com/@venisprajapati2102">medium.com/@venisprajapati2102</a>
