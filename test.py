@@ -77,6 +77,7 @@ def scan_omr(image, total_mcqs):
 for im in image_list_90:
 
     img = find_ROI(im, False)
+    # print(img.shape[0], img.shape[1])
     img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
     img = cv2.resize(img, (564, 394), interpolation=cv2.INTER_AREA)
 
@@ -85,6 +86,7 @@ for im in image_list_90:
 for im in image_list_190:
 
     img = find_ROI(im, True)
+    # print(img.shape[0], img.shape[1])
     img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
     img = cv2.resize(img, (564, 820), interpolation=cv2.INTER_AREA)
 

@@ -10,7 +10,8 @@ def MakeFinalResults(exam_name, exam_date, total_mcqs, positive_marks, negative_
 
     t_m = int(total_mcqs)
     p_m = int(positive_marks)
-    n_m = int(negative_marks)
+    n_m = float(negative_marks) if str(negative_marks).__contains__('.') else int(negative_marks)
+    # print(n_m)
 
     t_marks = t_m*p_m
 

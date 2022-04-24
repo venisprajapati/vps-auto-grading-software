@@ -73,7 +73,7 @@ def ScanFunction(image):
     number_of_black_pixels = np.sum(image == 0)
     # print(number_of_black_pixels)
 
-    if (number_of_black_pixels > 172):
+    if (number_of_black_pixels > 144):
         return True
     else:
         return False
