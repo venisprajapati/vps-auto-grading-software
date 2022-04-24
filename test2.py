@@ -8,14 +8,16 @@ image_list_90 = glob.glob('test/mcq-90/*.jpg')
 image_list_90 += glob.glob('test/mcq-90/*.jpeg')
 image_list_90 += glob.glob('test/mcq-90/*.png')
 
-image_list_190 = glob.glob('test/mcq-190/*.jpg')
-image_list_190 += glob.glob('test/mcq-190/*.jpeg')
-image_list_190 += glob.glob('test/mcq-190/*.png')
+image_list_190 = glob.glob('test/mcq-200/*.jpg')
+image_list_190 += glob.glob('test/mcq-200/*.jpeg')
+image_list_190 += glob.glob('test/mcq-200/*.png')
 
 
 id_point = (21, 50)
 start_point = [(21, 221), (134, 50), (134, 221), (247, 50), (247, 221), (360, 50), (360, 221), (473, 50), (473, 221),
-               (21, 448), (21, 619), (134, 448), (134, 619), (247, 448), (247, 619), (360, 448), (360, 619), (473, 448), (473, 619)]
+               (21, 410), (21, 581), (134, 410), (134, 581), (247, 410), (247, 581), (360, 410), (360, 581), (473, 410), (473, 581),
+               (21, 772), (134, 772), (247, 772), (360, 772), (473, 772)]
+total_bubble_count_in_column = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 2, 2, 2, 2, 2]
 
 ScannedOmrs = []
 
@@ -31,7 +33,8 @@ def scan_omr(image, total_mcqs):
         start_x = start_point[pts][0]
         start_y = start_point[pts][1]
         start = (start_x, start_y)
-        end = (start_x + 88, start_y + 170)
+        total_bubble_count = total_bubble_count_in_column[pts]
+        end = (start_x + 88, start_y + 17*total_bubble_count)
         color = (0, 255, 0)
 
         cv2.rectangle(rect_img, start, end, color, 1)
@@ -43,7 +46,7 @@ def scan_omr(image, total_mcqs):
     sheet = {}
 
     IdPortion = image[id_point[1]:id_point[1] +
-                      17*10, id_point[0]:id_point[0] + 22*4]
+                      17*total_bubble_count_in_column[0], id_point[0]:id_point[0] + 22*4]
     id = ScanID(IdPortion)
     sheet["id"] = id
 
@@ -54,11 +57,11 @@ def scan_omr(image, total_mcqs):
         start_x = start_point[pts][0]
         start_y = start_point[pts][1]
 
-        for box in range(0, 10):
+        for box in range(0, total_bubble_count_in_column[pts]):
 
             if Counter <= total_mcqs:
 
-                print(Counter)
+                # print(Counter)
 
                 ScanPortion = image[start_y:start_y +
                                     17, start_x:start_x + 22*4]
@@ -90,7 +93,7 @@ for im in image_list_190:
     img = ResizeImagewithAspectRatio(img, width=564, inter=cv2.INTER_AREA)
     img = cv2.resize(img, (564, 820), interpolation=cv2.INTER_AREA)
 
-    scan_omr(img, 190)
+    scan_omr(img, 200)
 
 
 print(ScannedOmrs)
