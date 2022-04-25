@@ -71,9 +71,9 @@ def ScanMCQs(image):
 def ScanFunction(image):
 
     number_of_black_pixels = np.sum(image == 0)
-    print(number_of_black_pixels, end=" ")
+    # print(number_of_black_pixels, end=" ")
 
-    if (number_of_black_pixels > 156):
+    if (number_of_black_pixels > 152):
         return True
     else:
         return False
