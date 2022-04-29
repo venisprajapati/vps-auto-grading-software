@@ -2,6 +2,8 @@ import cv2
 import numpy as np
 
 
+# This file contains code of some functions, for example scanning ID, scanning particular mcq or bubble from omr sheet, counting black pixels and resize image with maintained aspect ratio../
+
 def ScanID(image):
     ID = ''
     group = {0: 'A', 1: 'B', 2: 'C', 3: 'D', 4: 'E',

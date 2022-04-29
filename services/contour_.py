@@ -1,6 +1,8 @@
 import cv2
 import numpy as np
 
+# This file contains code of biggest contour detection (from scanned page) or frame detection of omr-sheet../
+
 
 def orderCornerPoints(corners):
 

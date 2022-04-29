@@ -1,6 +1,8 @@
 from openpyxl.reader.excel import load_workbook
 
 
+# This file contains code of adding results if examination to the new workbook to the provided students.xlsx file./
+
 def MakeExcelResult(results, name, date):
 
     id_names = ReadIdNames()

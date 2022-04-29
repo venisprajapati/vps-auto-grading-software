@@ -1,4 +1,3 @@
-
 # vps-auto-grading-software
 
 
@@ -36,9 +35,9 @@
 
 - There are specific rectangle gird like design to Scan specific Area, then inside area it will scan virtual grid like area inside OMR rectangle (i.e. around the bubble) in OMR Sheet so then functions will count the <b>number of Black pixels</b> in specific area (or bubble), if count of black pixels is above specific value then it is filled or marked otherwise not filled or marked by the user (or student).
 
-- 190 MCQs Bubble OMR Sheet with perspective-transformed image and mcq area highlighted to check count black pixels in specific square in virtual grid.
+- 200 MCQs Bubble OMR Sheet with perspective-transformed image and mcq area highlighted to check count black pixels in specific square in virtual grid.
 
-    ![contour-and-mcq-area](screen-shots/contour-and-mcq-area.png?raw=true)
+    ![contour-and-mcq-area](screen-shots/contour-and-mcq-area-for-200-mcq.png?raw=true)
 
 - Returned objects/dictionaries from scan function used to make results with answers given by users and scanned by openpyxl functions, then results are added to students excel file; then omr resonses and results are used to make a document that contains all details, ranking, analysis by marks, analysis by sections, results in details for individual students and also a response ticked by students in OMR Sheet.
 
@@ -76,7 +75,7 @@
 
 ## Testing
 
-- For testing, you may put scanned images of 90 and 190 mcq omr-sheet in <b>test/mcq-90</b> and <b>test/mcq-190</b> directory respectively, then run <b>test.bat</b> in current directory.
+- For testing, you may put scanned images of 90 and 200 mcq omr-sheet in <b>test/mcq-90</b> and <b>test/mcq-200</b> directory respectively, then run <b>test.bat</b> in current directory.
 
 - For linux & mac run following command after putting scanned images in respective directory in <b>test/</b>.
     ```

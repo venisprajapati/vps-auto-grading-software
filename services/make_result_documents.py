@@ -3,6 +3,8 @@ from docx import Document
 from docx.shared import Mm
 
 
+# This file contains code of making exam_date.docx file with required informations./
+
 def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, total_marks, section_1_n='', section_2_n='', section_3_n=''):
 
     document = Document()
@@ -30,7 +32,7 @@ def ResultDocument(exam_name_, exam_date_, section_, results, omr_s_, students, 
 
     footer_para = footer.paragraphs[0]
 
-    footer_para.text = f"{str(exam_name_)} {str(exam_date_)}"
+    footer_para.text = f"{str(exam_name_)} {str(exam_date_)}\t\tgithub: venisprajapati/vps-auto-grading-software"
 
     # title
     document.add_heading("Venis Prajapati's Auto grading Software", 0)

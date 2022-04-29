@@ -5,6 +5,8 @@ from services.functions import ResizeImagewithAspectRatio, BlackAndWhiteImage, S
 from services.contour_ import find_ROI
 
 
+# This file contains code of applying some image processing algorithm to scanned omr images then extract required mcq with count of pixels to count marked or ticked bubbles in mcq form omr sheet././
+
 def ScanOmrs(total_mcqs):
 
     image_list = glob.glob('./uploads/omrs/*.jpg')
@@ -13,9 +15,11 @@ def ScanOmrs(total_mcqs):
 
     id_point = (21, 50)
     start_point = [(21, 221), (134, 50), (134, 221), (247, 50), (247, 221), (360, 50), (360, 221), (473, 50), (473, 221),
-               (21, 410), (21, 581), (134, 410), (134, 581), (247, 410), (247, 581), (360, 410), (360, 581), (473, 410), (473, 581),
-               (21, 772), (134, 772), (247, 772), (360, 772), (473, 772)]
-    total_bubble_count_in_column = [10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 2, 2, 2, 2, 2]
+                   (21, 410), (21, 581), (134, 410), (134, 581), (247, 410), (247,
+                                                                              581), (360, 410), (360, 581), (473, 410), (473, 581),
+                   (21, 772), (134, 772), (247, 772), (360, 772), (473, 772)]
+    total_bubble_count_in_column = [10, 10, 10, 10, 10, 10, 10, 10,
+                                    10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 2, 2, 2, 2, 2]
 
     ScannedOmrs = []
 

@@ -4,9 +4,10 @@
 
 ### 1. omrs ( .jpg/.jpeg (prefer) or .png )
 
-* Black & white image - 300 dpi (A4 preferable)
-* Print must be in actual size or fit to scale (refer to omrs)
-* Scanned omr sheet of 90 and 190 mcqs
+* OMR sheet paper A4 (preferable)
+* Black & white image - 300 dpi or greater for scanning
+* Print must be in actual size or fit to scale (refer to omr-sheet folder given in repo)
+* Scanned omr sheet of 90 and 200 mcqs
 * Id number is mandatory in omrs
 
 ### 2. students.xlsx (Sheet1)
@@ -49,5 +50,15 @@
 | id | obtained marks |
 | A001 | 211 |
 | J124 | 160 |
+
+## Screen shots
+
+### For Input
+
+![functions-input](screen-shots/functions-1.png?raw=true)
+
+### For Output
+
+![functions-output](screen-shots/functions-2.png?raw=true)
 
 *thank you*

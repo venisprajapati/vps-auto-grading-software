@@ -3,6 +3,8 @@ from services.scan_omr_sheet import ScanOmrs
 from services.read_answer import ReadAnswer
 
 
+# This file contains code of making result dictionary to give to other files for further business logic./
+
 def Result(total_mcqs, positive_=1, negative_=0, section=False, section_1=0, section_2=0, section_3=0):
 
     omrs = ScanOmrs(total_mcqs)

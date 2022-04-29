@@ -1,6 +1,8 @@
 from openpyxl.reader.excel import load_workbook
 
 
+# This file contains code of reading answers from uploaded answers.xlsx file./
+
 def ReadAnswer(total_mcqs):
     wb = load_workbook('./uploads/answers.xlsx')
 

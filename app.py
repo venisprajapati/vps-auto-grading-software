@@ -13,6 +13,8 @@ __license__ = 'Apache-2.0 License'
 __version__ = 'v 2.0'
 
 
+# This file contains code of executing main function i.e. app.py file and some file handling logic
+
 import os
 import webbrowser
 from waitress import serve
