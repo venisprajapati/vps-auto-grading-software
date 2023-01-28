@@ -75,7 +75,7 @@ def ScanFunction(image):
     number_of_black_pixels = np.sum(image == 0)
     # print(number_of_black_pixels, end=" ")
 
-    if (number_of_black_pixels > 152):
+    if (number_of_black_pixels > 144):
         return True
     else:
         return False
@@ -85,7 +85,7 @@ def BlackAndWhiteImage(image):
 
     blur = cv2.GaussianBlur(image, (3, 1), 0)
     gray = cv2.cvtColor(blur, cv2.COLOR_BGR2GRAY)
-    threshold_level = 74
+    threshold_level = 88
 
     mask = gray < threshold_level
     image[mask] = (0, 0, 0)
