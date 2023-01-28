@@ -4,10 +4,6 @@ author: venisprajapati
 file-name: app.py
 """
 
-
-# from __future__ import barry_as_FLUFL
-
-
 __author__ = 'Venis Prajapati'
 __license__ = 'Apache-2.0 License'
 __version__ = 'v 2.0'
