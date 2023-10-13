@@ -1,4 +1,5 @@
-# vps-auto-grading-software
+# Venis Prajapati's Auto grading Software
+### vps-auto-grading-software
 
 
 <p align="right">
@@ -8,7 +9,7 @@
 
 ## Purpose
 
-- Open-source Web-browser based General purpose Software to make bubble OMR sheet Checking and Grading task Easy & Efficient, that runs on localhost using Python (virtual environment).
+- Open-source Web-browser based General purpose Software to make bubble OMR sheet Checking and Grading task Easy & Efficient, that runs on localhost using Python.
 
 
 ## Technical Info
@@ -87,9 +88,7 @@
 - It will also print python dictionary, containing information of all scanned OMRs for test.
 
 
-## Usage / bugs
-
-* [Functions.md](Functions.md)
+# [User Manual](Functions.md)
 
 ### For customization in software features, you can mail using link given below.
 
@@ -106,17 +105,11 @@ Follow the important links given below:
 - Follow the community guidelines at [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) .
 
 
-## Developer
+## Developer Info.
 
 ### Venis Prajapati
 * Github: <a href="https://github.com/venisprajapati">github.com/venisprajapati</a>
-* LinkedIn: <a href="https://linkedin.com/in/venis-prajapati-a12b1019b">linkedin.com/in/venis-prajapati-a12b1019b</a>
-* Medium: <a href="https://medium.com/@venisprajapati2102">medium.com/@venisprajapati2102</a>
-
-
-## NOTICE
-
-Read [NOTICE](NOTICE) , before using or contributing to the project.
+* LinkedIn: <a href="https://linkedin.com/in/venisprajapati">linkedin.com/in/venisprajapati</a>
 
 
 ## License
