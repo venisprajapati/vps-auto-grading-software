@@ -38,8 +38,8 @@
 
 - 200 MCQs Bubble OMR Sheet with perspective-transformed image and mcq area highlighted to check count black pixels in specific square in virtual grid.
 
-    ![contour-and-mcq-area](screen-shots/contour-and-mcq-area-for-200-mcq.png?raw=true)
-
+  <img src="https://github.com/venisprajapati/vps-auto-grading-software/blob/main/screen-shots/contour-and-mcq-area-for-200-mcq.png" width=500>
+    
 - Returned objects/dictionaries from scan function used to make results with answers given by users and scanned by openpyxl functions, then results are added to students excel file; then omr resonses and results are used to make a document that contains all details, ranking, analysis by marks, analysis by sections, results in details for individual students and also a response ticked by students in OMR Sheet.
 
 - Hence, OMR Sheet is checked and you get result and student-report-cards.
@@ -88,7 +88,7 @@
 - It will also print python dictionary, containing information of all scanned OMRs for test.
 
 
-# [User Manual](Functions.md)
+# [User Guide](Functions.md)
 
 ### For customization in software features, you can mail using link given below.
 
