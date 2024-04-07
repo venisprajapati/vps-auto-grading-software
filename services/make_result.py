@@ -38,7 +38,7 @@ def Result(total_mcqs, positive_=1, negative_=0, section=False, section_1=0, sec
             elif (answers[i] == omr[i]):
                 correct_.append(i)
             elif (answers[i].__contains__('/')):
-                ans_split_string = (omr[i]).split('/')
+                ans_split_string = (answers[i]).split('/')
                 if (omr[i] in ans_split_string):
                     correct_.append(i)
                 else:
